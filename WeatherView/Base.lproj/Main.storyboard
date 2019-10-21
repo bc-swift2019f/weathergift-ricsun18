@@ -13,7 +13,7 @@
         <!--PageVC-->
         <scene sceneID="K0Q-iI-Lni">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="yP0-pi-lCE" customClass="PageVC" customModule="WeatherView" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="yP0-pi-lCE" customClass="PageVC" customModule="WeatherView" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7x2-dQ-CUf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-315" y="-595"/>
@@ -21,7 +21,7 @@
         <!--DetailVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="DetailVC" customModule="WeatherView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailVC" id="BYZ-38-t0r" customClass="DetailVC" customModule="WeatherView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,6 +76,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="currentImage" destination="Yf5-jM-2AP" id="bAB-Vy-g1a"/>
+                        <outlet property="dateLabel" destination="Y3n-Ch-Snd" id="cR9-SC-Cl4"/>
+                        <outlet property="locationLabel" destination="XL6-8h-7zD" id="sOw-93-aux"/>
+                        <outlet property="summaryLabel" destination="zbz-gg-ATt" id="4bZ-aX-g6W"/>
+                        <outlet property="temperatureLabel" destination="fCI-ar-QAc" id="zHK-as-Y0E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
