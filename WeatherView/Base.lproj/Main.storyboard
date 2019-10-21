@@ -13,7 +13,7 @@
         <!--PageVC-->
         <scene sceneID="K0Q-iI-Lni">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="yP0-pi-lCE" customClass="PageVC" customModule="WeatherView" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="PageVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="yP0-pi-lCE" customClass="PageVC" customModule="WeatherView" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7x2-dQ-CUf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-315" y="-595"/>
