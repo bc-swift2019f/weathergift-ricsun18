@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		33E6E0E10B3A9ADDDE33F863 /* Pods_WeatherView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A1F767706C9534DF2EC541 /* Pods_WeatherView.framework */; };
 		822D6B93237CD77500B4458F /* WeatherLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822D6B92237CD77500B4458F /* WeatherLocation.swift */; };
+		82483D6B237CEB8400E9F055 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82483D6A237CEB8400E9F055 /* Constants.swift */; };
 		8288DACD2357B9260036A5CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8288DACC2357B9260036A5CF /* AppDelegate.swift */; };
 		8288DAD22357B9260036A5CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8288DAD02357B9260036A5CF /* Main.storyboard */; };
 		8288DAD42357B9290036A5CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8288DAD32357B9290036A5CF /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 		72A1F767706C9534DF2EC541 /* Pods_WeatherView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7407C56FF8C720B244E3BAEB /* Pods-WeatherView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherView.release.xcconfig"; path = "Target Support Files/Pods-WeatherView/Pods-WeatherView.release.xcconfig"; sourceTree = "<group>"; };
 		822D6B92237CD77500B4458F /* WeatherLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherLocation.swift; sourceTree = "<group>"; };
+		82483D6A237CEB8400E9F055 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8288DAC92357B9260036A5CF /* WeatherView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8288DACC2357B9260036A5CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8288DAD12357B9260036A5CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			children = (
 				8288DACC2357B9260036A5CF /* AppDelegate.swift */,
 				822D6B92237CD77500B4458F /* WeatherLocation.swift */,
+				82483D6A237CEB8400E9F055 /* Constants.swift */,
 				8288DADE2357BA6C0036A5CF /* DetailVC.swift */,
 				8288DAE02357C0EE0036A5CF /* ListVC.swift */,
 				8288DAE22357C37A0036A5CF /* PageVC.swift */,
@@ -235,6 +238,7 @@
 				8288DAE32357C37A0036A5CF /* PageVC.swift in Sources */,
 				8288DACD2357B9260036A5CF /* AppDelegate.swift in Sources */,
 				8288DADF2357BA6C0036A5CF /* DetailVC.swift in Sources */,
+				82483D6B237CEB8400E9F055 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

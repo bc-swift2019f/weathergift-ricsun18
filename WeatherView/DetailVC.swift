@@ -82,6 +82,7 @@ extension DetailVC: CLLocationManagerDelegate {
             }
             self.locationsArray[0].name = place
             self.locationsArray[0].coordinates = currentCoordinates
+            self.locationsArray[0].getWeather()
             self.updateUserInterface()
         })
     }
