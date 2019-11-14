@@ -41,12 +41,12 @@ class PageVC: UIPageViewController {
     func configurePageControl() {
         let pageControlHeight: CGFloat = barButtonHeight
         let pageControlWidth: CGFloat = (view.frame.width - (barButtonWidth*2))
-        
         let safeHeight = view.frame.height - view.safeAreaInsets.bottom
         
         pageControl = UIPageControl(frame: CGRect(x: (view.frame.width - pageControlWidth)/2, y: safeHeight - pageControlHeight, width: pageControlWidth, height: pageControlHeight))
         pageControl.pageIndicatorTintColor = UIColor.lightGray
         pageControl.currentPageIndicatorTintColor = UIColor.black
+        pageControl.backgroundColor = UIColor.white
         pageControl.numberOfPages = locationsArray.count
         pageControl.currentPage = currentPage
         pageControl.addTarget(self, action: #selector(pageControlPressed), for: .touchUpInside)
