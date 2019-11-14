@@ -36,7 +36,6 @@ class WeatherLocation {
             case .success(let value):
                 let json = JSON(value)
                 if let temperature = json["currently"]["temperature"].double {
-                    print("***** temperature inside getWeather = \(temperature)")
                     let roundedTemp = String(format: "%3.f", temperature)
                     self.currentTemp = roundedTemp + "º"
                 } else {
