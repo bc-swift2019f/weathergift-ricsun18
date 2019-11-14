@@ -57,7 +57,9 @@ class DetailVC: UIViewController {
         dateLabel.text = dateString
         temperatureLabel.text = location.currentTemp
         currentImage.image = UIImage(named: location.currentIcon)
+        summaryLabel.text = location.currentSummary
         tableView.reloadData()
+        collectionView.reloadData()
     }
 }
 
@@ -128,13 +130,14 @@ extension DetailVC: UITableViewDataSource, UITableViewDelegate {
 }
 
 extension DetailVC: UICollectionViewDataSource, UICollectionViewDelegate {
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 24
+        return locationsArray[currentPage].hourlyForecastArray.count
     }
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let hourlyCell = collectionView.dequeueReusableCell(withReuseIdentifier: "HourlyCell", for: indexPath)
+        let hourlyCell = collectionView.dequeueReusableCell(withReuseIdentifier: "HourlyCell", for: indexPath) as! HourlyWeatherCell
+        let hourlyForecast = locationsArray[currentPage].hourlyForecastArray[indexPath.row]
+        let timeZone = locationsArray[currentPage].timeZone
+        hourlyCell.update(with: hourlyForecast, timeZone: timeZone)
         return hourlyCell
     }
 }
